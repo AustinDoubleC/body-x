@@ -14,3 +14,25 @@
     background-position: center;
   }
 }
+
+#review{
+  height: 500px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.reviewContainer{
+  width:1280px;
+  margin:auto;
+}
+.reviewSubcontainer{
+  width:85%;
+  margin:auto;
+}
+
+@media(max-width:1280px){
+  .reviewContainer{
+    width:100%;
+  }
+}

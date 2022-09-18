@@ -13,7 +13,6 @@ let slider = tns({
   container:".my-slider",
   "slideBy":"1",
   "speed":200,
-  "nav":false,
   autoplay:true,
   controls:false,
   autoplayButtonOutput:false,
@@ -34,4 +33,24 @@ let slider = tns({
       items:1
     }
   }
+})
+
+const btnChatOpen = document.getElementById("chatOpen")
+const chatbox = document.getElementById("chatbox")
+const btnChatClose = document.getElementById("chatClose")
+const btnSendChat = document.getElementById("btnSendChat")
+const chatInput = document.getElementById("chatInput")
+
+
+//Chatbox control
+btnChatClose.addEventListener("click",()=>{
+  chatbox.style.transform = "translateX(600px)"
+  chatbox.style.opacity = 0
+})
+btnChatOpen.addEventListener("click",()=>{
+  chatbox.style.transform = "translateX(-600px)"
+  chatbox.style.opacity = 1
+})
+btnSendChat.addEventListener("click",()=>{
+  chatInput.value = ""
 })

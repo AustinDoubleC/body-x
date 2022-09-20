@@ -81,25 +81,29 @@
         <a href="#" class="hover:text-pink-500">Support</a>
       </div>
       <div class="flex flex-col md:flex-row">
-        <div
-          class="w-full md:w-1/2 mt-32 mb-32 p-4 text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl"
+        <h1
+          class="w-full md:w-1/2 ny-32 p-4 text-4xl bg-gray-100 bg-opacity-50 font-bold text-gray-600 uppercase md:p-10 md:m-32 md:mx-0 md:text-6xl"
         >
           Impressive Experiences That Deliver
-        </div>
+        </h1>
         <!--login-->
-        <div class="flex flex-col w-full last:md:w-1/2">
+        <div class="flex flex-col w-full last:md:w-1/2 md:ml-5">
           <div class="flex flex-col">
-              <div class="flex flex-col bg-slate-200 p-3">
+              <div class="flex flex-col bg-transparent text-white md:mt-32 p-3">
                 <h2 class="text-2xl">blah blah experience</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus facere provident excepturi assumenda quia quaerat alias magnam similique? Autem ducimus dignissimos, earum mollitia tempore esse sit commodi eaque vero ipsa!
                 </p>
-                <button class="py-1 bg-teal-500 text-white hover:bg-teal-700 hover:-translate-y-1 transition-all rounded" onclick="register()">Join us</button>
+                <div class="flex justify-end">
+                  <button class="py-1 bg-teal-500 text-white w-1/4 hover:bg-teal-700 hover:-translate-y-1 transition-all rounded" onclick="register()">Join us</button>
+                </div>
               </div>
-              <div class="flex flex-col mt-5 bg-slate-200 p-3">
-                <h6>Already a member? Login here</h6>
-                <input type="email"placeholder="email" id="email"/>
-                <input class="mt-3" type="password" placeholder="password" id="password">
-                <button id="btn-login" class="mt-3 py-1 bg-teal-500 text-white hover:bg-teal-700 hover:-translate-y-1 transition-all rounded">Login</button>
+              <div class="flex flex-col mt-5 bg-gray-100 bg-opacity-50 text-white p-3">
+                <h6>Member login here</h6>
+                <div class="flex">
+                  <input type="email"placeholder="email" id="email" class="px-1"/>
+                  <input type="password" placeholder="password" id="password" class="ml-2 px-1">
+                  <button id="btn-login" class="ml-2 py-1 px-2 bg-teal-500 text-white hover:bg-teal-700 hover:-translate-y-1 transition-all rounded">Login</button>
+                </div>
                 <p id="error-message"></p>
             </div>
           </div>
